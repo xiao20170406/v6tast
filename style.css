@@ -1,0 +1,81 @@
+/* V6-Test 共用样式 */
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto}
+body{
+    background:#0b1220;color:#e6edf7;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    position:relative;
+}
+.lang-switch{
+    position:absolute;
+    top:20px;
+    left:20px;
+    padding:8px 16px;
+    background:#152038;
+    border:1px solid #42a5ff;
+    color:#42a5ff;
+    border-radius:8px;
+    cursor:pointer;
+}
+.lang-switch:hover{
+    background:#42a5ff;
+    color:#0b1220;
+}
+.joke-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+    padding:8px 16px;
+    background:#c0392b;
+    border:1px solid #e74c3c;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    text-decoration:none;
+    font-size:14px;
+}
+.joke-btn:hover{
+    background:#e74c3c;
+    color:#fff;
+}
+.btn-retest{
+    margin-top:20px;
+    padding:8px 20px;
+    background:#0b1220;
+    border:1px solid #42a5ff;
+    color:#42a5ff;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+}
+.btn-retest:hover{
+    background:#42a5ff;
+    color:#0b1220;
+}
+.card{
+    background:#152038;padding:42px;border-radius:18px;
+    max-width:620px;width:100%;text-align:center
+}
+h1{color:#42a5ff;margin-bottom:28px;font-size:30px}
+.ipbox{
+    font-family:Consolas,monospace;padding:18px;background:#0b1220;
+    border-radius:12px;margin-bottom:20px;word-break:break-all;font-size:19px
+}
+.ok{color:#59fa89}
+.fail{color:#ff7777}
+.tip{color:#99a8c2;font-size:14px;line-height:1.7}
+.copyright{
+    margin-top:40px;
+    font-size:12px;
+    color:#7488b0;
+    text-align:center;
+}
+/* 独立中英文容器，完全互斥 */
+.en-wrap{display:none;}
+.zh-wrap{display:block;}
+html.en .zh-wrap{display:none !important;}
+html.en .en-wrap{display:block !important;}
